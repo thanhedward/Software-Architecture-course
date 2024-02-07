@@ -48,3 +48,45 @@ File là một tập hợp dữ liệu. Chúng được tạo bởi người dù
 
 ## BSD
 
+BSD là viết tắt của "Berkeley Software Distribution," một hệ điều hành Unix-like phát triển từ nền tảng của Unix Research của Đại học California, Berkeley. BSD bắt nguồn từ dự án Unix tại đại học này vào những năm 1970 và 1980. BSD là một trong những hệ điều hành Unix đầu tiên được phát triển và phân phối miễn phí dưới dạng mã nguồn mở.
+
+Các dự án BSD phổ biến bao gồm FreeBSD, OpenBSD và NetBSD. Mỗi dự án này có các mục tiêu và sự phát triển riêng, nhưng chúng đều dựa trên mã nguồn gốc từ Berkeley và cung cấp các tính năng như độ ổn định, bảo mật và hiệu suất cao. BSD cũng đã đóng góp rất nhiều vào ngành công nghiệp máy tính, với các yếu tố như TCP/IP stack và các công nghệ mạng khác được phát triển ban đầu trong dự án BSD.
+
+BSD có nhiều phiên bản nổi bật, trong đó có:
+1. FreeBSD: Là phiên bản BSD phổ biến nhất và cũng là phiên bản cơ sở cho nhiều phiên bản BSD khác. FreeBSD tập trung vào tính ổn định, hiệu năng và an ninh.
+2. OpenBSD: Được phát triển với mục tiêu chính là bảo mật. OpenBSD được kiểm tra kỹ lưỡng và có một hệ thống bảo mật mạnh mẽ.
+3. NetBSD: Là phiên bản BSD đa nền tảng, hỗ trợ nhiều kiến trúc phần cứng khác nhau. NetBSD có thể chạy trên nhiều loại máy tính từ máy tính cá nhân đến các máy chủ lớn.
+4. DragonFly BSD: Là một nhánh được tách ra từ FreeBSD với mục tiêu là tăng hiệu năng và hỗ trợ xử lý đa nhân.
+Phiên bản BSD khác cũng bao gồm PC-BSD (tập trung vào việc cung cấp một phiên bản BSD dễ sử dụng cho người dùng cuối) và Mac OS X (phiên bản BSD được Apple sử dụng làm nền tảng cho hệ điều hành của họ).
+BSD được phân phối dưới các giấy phép mã nguồn mở, cho phép người dùng sử dụng, chỉnh sửa và phân phối mã nguồn của BSD. BSD license cũng có các điểm khác biệt so với các giấy phép nguồn mở khác, như cho phép phát triển dự án có chủ sở hữu và không yêu cầu việc công bố mã nguồn.
+
+## Linux
+Linux là một hệ điều hành máy tính mã nguồn mở và miễn phí được phát triển dựa trên nhân Linux, một nhân hệ điều hành Unix-like. Ban đầu, Linux được phát triển bởi Linus Torvalds vào những năm đầu của thập kỷ 1990, và ngày nay đã trở thành một trong những hệ điều hành phổ biến nhất trên thế giới, được sử dụng rộng rãi trên các máy tính cá nhân, máy chủ, thiết bị nhúng và nhiều nền tảng khác.
+Hệ điều hành Linux bao gồm nhiều phần khác nhau:
+ - Nhân (Kernel): Nhân Linux là phần quan trọng nhất của hệ điều hành Linux. Nó là phần mềm trung tâm quản lý tài nguyên của hệ thống, điều khiển truy cập vào phần cứng, quản lý bộ nhớ, quản lý tác vụ và cung cấp giao diện giữa phần cứng và phần mềm ứng dụng.
+ - GNU Utilities: Linux thường được kết hợp với các công cụ và tiện ích từ dự án GNU (GNU's Not Unix). Các công cụ này bao gồm các lệnh dòng lệnh (command-line utilities) như ls, cp, mv, grep, và nhiều công cụ khác để quản lý tập tin, thư mục và thực thi các tác vụ.
+ - Các giao diện người dùng: Linux có nhiều giao diện người dùng, bao gồm giao diện dòng lệnh (CLI - Command Line Interface) và giao diện đồ họa (GUI - Graphical User Interface). Một số giao diện đồ họa phổ biến bao gồm GNOME, KDE, Xfce và LXDE.
+ - Hệ thống quản lý gói: Linux thường đi kèm với một hệ thống quản lý gói để quản lý cài đặt, cập nhật và xóa các phần mềm trên hệ thống. Một số hệ thống quản lý gói phổ biến bao gồm APT (Advanced Package Tool) trong các bản phân phối dựa trên Debian và YUM (Yellowdog Updater Modified) trong các bản phân phối dựa trên Red Hat.
+ - Các dịch vụ hệ thống: Linux cung cấp một loạt các dịch vụ hệ thống như quản lý tài nguyên mạng (ví dụ: DHCP, DNS), quản lý người dùng và quyền truy cập (ví dụ: SSH, sudo), và các dịch vụ khác như máy chủ web (ví dụ: Apache, Nginx).
+
+Distribution trong Linix là một phiên bản cụ thể của Linux bao gồm nhân Linux, các công cụ hệ thống, ứng dụng, và các gói phần mềm khác được tổ chức và đóng gói lại bởi một nhóm hoặc tổ chức cụ thể. Mỗi distribution Linux có thể có một mục tiêu và một phong cách riêng, dựa trên nhu cầu và mục đích của nhóm phát triển.
+LINUX MINT
+MANJARO
+DEBIAN
+UBUNTU
+ANTERGOS
+SOLUS
+FEDORA
+ELEMENTARY OS
+OPENSUSE
+
+## *nix
+Hệ điều hành Unix-like (đôi khi được gọi là UN * X hoặc * nix ) là hệ điều hành hoạt động tương tự như hệ thống Unix, nhưng không nhất thiết phải tuân thủ hoặc được chứng nhận với bất kỳ phiên bản nào của UNIX Base Specification. Unix-like là một ứng dụng hoạt động giống như lệnh hoặc Unix Shell tương ứng, không có tiêu chuẩn để xác định thuật ngữ và có thể có một số khác biệt về quan điểm, mức độ mà một hệ điều hành hoặc ứng dụng nhất định.
+*nix bao gồm các hệ điều hành nguồn mở và miễn phí, được lấy cảm hứng từ Unix của Bell Labs hoặc được thiết kế để mô phỏng các tính năng, các công việc thương mại, độc quyền và các phiên bản dựa trên mã nguồn UNIX được cấp phép.
+
+## macOS thuộc loại nào?
+Phiên bản thương mại, close source nổi tiếng, thành công nhất, có lẽ chính là MacOS đình đám của Apple. MacOS cũng như các hệ điều hành khác của Apple hiện nay là iOS, watchOS, và tvOS đều được dựa trên nền tảng của BSD. Và MacOS cũng là một trong số ít các hệ điều hành được coi là Unix-like, khi có được chứng nhận Single UNIX Specification.
+
+
+
+
