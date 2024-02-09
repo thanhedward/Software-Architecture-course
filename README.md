@@ -69,24 +69,32 @@ Hệ điều hành Linux bao gồm nhiều phần khác nhau:
  - Hệ thống quản lý gói: Linux thường đi kèm với một hệ thống quản lý gói để quản lý cài đặt, cập nhật và xóa các phần mềm trên hệ thống. Một số hệ thống quản lý gói phổ biến bao gồm APT (Advanced Package Tool) trong các bản phân phối dựa trên Debian và YUM (Yellowdog Updater Modified) trong các bản phân phối dựa trên Red Hat.
  - Các dịch vụ hệ thống: Linux cung cấp một loạt các dịch vụ hệ thống như quản lý tài nguyên mạng (ví dụ: DHCP, DNS), quản lý người dùng và quyền truy cập (ví dụ: SSH, sudo), và các dịch vụ khác như máy chủ web (ví dụ: Apache, Nginx).
 
-Distribution trong Linix là một phiên bản cụ thể của Linux bao gồm nhân Linux, các công cụ hệ thống, ứng dụng, và các gói phần mềm khác được tổ chức và đóng gói lại bởi một nhóm hoặc tổ chức cụ thể. Mỗi distribution Linux có thể có một mục tiêu và một phong cách riêng, dựa trên nhu cầu và mục đích của nhóm phát triển.
-LINUX MINT
-MANJARO
-DEBIAN
-UBUNTU
-ANTERGOS
-SOLUS
-FEDORA
-ELEMENTARY OS
-OPENSUSE
-
 ## *nix
 Hệ điều hành Unix-like (đôi khi được gọi là UN * X hoặc * nix ) là hệ điều hành hoạt động tương tự như hệ thống Unix, nhưng không nhất thiết phải tuân thủ hoặc được chứng nhận với bất kỳ phiên bản nào của UNIX Base Specification. Unix-like là một ứng dụng hoạt động giống như lệnh hoặc Unix Shell tương ứng, không có tiêu chuẩn để xác định thuật ngữ và có thể có một số khác biệt về quan điểm, mức độ mà một hệ điều hành hoặc ứng dụng nhất định.
 *nix bao gồm các hệ điều hành nguồn mở và miễn phí, được lấy cảm hứng từ Unix của Bell Labs hoặc được thiết kế để mô phỏng các tính năng, các công việc thương mại, độc quyền và các phiên bản dựa trên mã nguồn UNIX được cấp phép.
 
 ## macOS thuộc loại nào?
-Phiên bản thương mại, close source nổi tiếng, thành công nhất, có lẽ chính là MacOS đình đám của Apple. MacOS cũng như các hệ điều hành khác của Apple hiện nay là iOS, watchOS, và tvOS đều được dựa trên nền tảng của BSD. Và MacOS cũng là một trong số ít các hệ điều hành được coi là Unix-like, khi có được chứng nhận Single UNIX Specification.
+MacOS cũng như các hệ điều hành khác của Apple hiện nay là iOS, watchOS, và tvOS đều được dựa trên nền tảng của BSD. Và MacOS cũng là một trong số ít các hệ điều hành được coi là Unix-like, khi có được chứng nhận Single UNIX Specification.
 
+# Alpine vs Ubuntu
+## Ubuntu là gì?
+Ubuntu là một hệ điều hành máy tính dựa trên Debian GNU/Linux, một bản phân phối Linux thông dụng. Hệ điều hành này yêu cầu cấu hình CPU tối thiểu là 1 GHz, RAM ít nhất 1GB và dung lượng ổ đĩa ít nhất 2.5 GB. Nó hỗ trợ thư viện GNU C và các công cụ quản lý gói dựa trên APT.
 
+## Alpine Linux là gì?
+Alpine Linux là một bản phân phối linux nhẹ chủ yếu được tạo ra để chạy các ứng dụng trên các bản phân phối linux. Nó đơn giản, an toàn và tiết kiệm tài nguyên. Nó được thiết kế để chạy trực tiếp từ RAM. Một container cần 8 MB và dung lượng ổ đĩa mà nó yêu cầu là khoảng 130 MB . Nó không chỉ cung cấp một môi trường Linux chính thức mà còn cung cấp một danh sách khổng lồ các gói từ kho lưu trữ. Nó được xây dựng dựa trên musl và BusyBox, do đó nó nhỏ gọn và hiệu quả hơn các hệ điều hành dựa trên GNU/LINUX truyền thống như Ubuntu.
+
+## Khác nhau
+1. Kích thước:
+- Alpine Linux: Nổi tiếng với kích thước nhỏ gọn, chỉ mất khoảng vài MB. Điều này làm cho Alpine rất phù hợp cho việc sử dụng trong các container docker và các ứng dụng nhúng.
+- Ubuntu: Ubuntu có kích thước lớn hơn so với Alpine do nó có nhiều tính năng và gói phần mềm mặc định hơn. Điều này làm cho Ubuntu phù hợp cho cả các ứng dụng máy tính cá nhân và server.
+
+2. Bảo mật
+- Alpine Linux: Alpine được biết đến với việc tập trung vào bảo mật và an toàn. Nó sử dụng musl libc thay vì glibc, và mặc định sử dụng BusyBox thay vì các tiện ích GNU thông thường, điều này có thể giảm thiểu các điểm tấn công tiềm ẩn.
+- Ubuntu: Ubuntu cũng có các cơ chế bảo mật mạnh mẽ như AppArmor và một hệ thống cập nhật phần mềm tự động, nhưng không như Alpine, nó không tập trung vào việc tối ưu hóa kích thước để tăng cường bảo mật.
+
+3. APK so với APT
+Trong các trình quản lý gói truyền thống như APT, trước tiên máy chủ sẽ đọc gói từ kho lưu trữ, lưu nó vào bộ đệm, xác minh chữ ký và sau đó trích xuất nó. Đây là một quá trình sử dụng nhiều tài nguyên vì phải thực hiện ba thao tác đọc và hai thao tác ghi.
+
+Ngược lại với APK được Alpine linux sử dụng, tính toán tổng kiểm tra trong khi chờ I/O, ghi trực tiếp vào hệ thống tệp (dưới dạng .apknew), đổi tên tệp sau khi chữ ký được xác minh hoặc xóa tệp nếu chữ ký không được xác minh. Quá trình này chỉ yêu cầu một lần đọc và một lần ghi. Điều này làm cho máy chủ Alpine hoạt động hiệu quả hơn rất nhiều so với máy chủ Ubuntu vì nó sử dụng ít tài nguyên hệ thống hơn như CPU và hệ thống tập tin.
 
 
