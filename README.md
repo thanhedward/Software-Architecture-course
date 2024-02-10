@@ -20,15 +20,6 @@ Các thành phần đi kèm:
 - Docker Compose cho phép bạn định nghĩa các container cần thiết để triển khai ứng dụng của bạn trong cùng 1 tệp cấu hình ( .yaml ).
 - Các tệp cấu hình này chứa các thông tin về image, environment, network, volume ...
   
-  Các thành cở bản của Docker Compose:
-  - Compose file: Đây là một tệp YAML ( docker-compose.yml ) chứa thông tin cần thiết về container để triển khai ứng dụng.
-  - Các dịch vụ (services): Là một nhóm container mà các bạn muốn tạo ra. Mỗi service đại diện cho một thành phần của ứng dụng, ví dụ như service backend, service frontend, service database...
-  - Container: Là một đối tượng chứa ứng dụng của bạn và các thành phần của nó, bao gồm phần mềm và cấu hình của ứng dụng. Docker Compose sử dụng các container để triển khai các services được định nghĩa trong tệp docker-compose.yml.
-  - Các mạng (networks): Định nghĩa các mạng ảo để các container trong cùng một service hoặc các service khác nhau liên lạc với nhau. Các mạng này cho phép các container truy cập lẫn nhau bằng tên hoặc địa chỉ IP.
-  - Các khối lưu trữ (volumes): Là một phần quan trọng của quá trình triển khai Docker Compose, cho phép bạn lưu trữ dữ liệu của ứng dụng của mình độc lập với các container. Điều này giúp cho việc sao lưu, phục hồi và quản lý dữ liệu trở nên dễ dàng hơn.
-  - Các biến môi trường (environment variables): Là các biến môi trường được sử dụng để cấu hình các container của dịch vụ. Điều này giúp bạn dễ dàng định nghĩa các cấu hình của ứng dụng của mình trong tệp docker-compose.yml một cách linh hoạt hơn.
-  - Command line interface (CLI): Là giao diện dòng lệnh để chạy các lệnh liên quan đến Docker Compose, cho phép tạo, triển khai, quản lý và xóa các container và service.
-
  # Linux vs Unix vs BSD hay *nix? macOS thuộc loại nào?
 
  ## Unix
@@ -97,4 +88,9 @@ Trong các trình quản lý gói truyền thống như APT, trước tiên máy
 
 Ngược lại với APK được Alpine linux sử dụng, tính toán tổng kiểm tra trong khi chờ I/O, ghi trực tiếp vào hệ thống tệp (dưới dạng .apknew), đổi tên tệp sau khi chữ ký được xác minh hoặc xóa tệp nếu chữ ký không được xác minh. Quá trình này chỉ yêu cầu một lần đọc và một lần ghi. Điều này làm cho máy chủ Alpine hoạt động hiệu quả hơn rất nhiều so với máy chủ Ubuntu vì nó sử dụng ít tài nguyên hệ thống hơn như CPU và hệ thống tập tin.
 
+# VNC
+VNC được hiểu là một công nghệ kỹ thuật cho phép việc chia sẻ giao diện màn hình từ xa. VNC giúp người dùng hiển thị được màn hình của máy tính. Hay cả những hệ thống ở xa trực tiếp trên máy tính chính của người dùng. Sau đó có thể điều khiển các thao tác qua kết nối mạng. VNC rất thuận lợi cho những công việc cần quản lý từ xa.
 
+VNC hoạt động theo cơ chế client/server và sử dụng giao thức VNC. Giao thức VNC hoạt động rất đơn giản. Chúng truy cập theo kênh giao diện đồ hoạ của máy tính người sử dụng thông qua mạng internet.
+Giao thức VNC được thiết kế dựa trên ý tưởng của Remote Frame Buffer. Người xem sẽ bắt đầu chia sẻ các đầu ra như bàn phím, click chuột với VNC Server. VNC Server sẽ ghi lại các nội dung hiển thị framebuffer và chia sẻ chúng lại cho VNC Client.
+Giao thức VNC có 1 số yêu cầu nhất định về màn hình. Cụ thể là tỉ lệ màn hình, độ phân giải màn hình, độ rộng màn hình. Tất cả sẽ đáp ứng được hoạt động của VNC.
